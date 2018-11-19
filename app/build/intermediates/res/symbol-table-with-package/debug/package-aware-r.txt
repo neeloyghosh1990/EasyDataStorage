@@ -1,0 +1,2 @@
+com.neeloy.lib.data.storage
+int string app_name 0x7f150001
