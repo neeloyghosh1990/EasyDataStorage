@@ -15,7 +15,9 @@ allprojects {
 ```
   
 Add the dependency
-`
+`dependencies {
+	        implementation 'com.github.neeloyghosh1990:EasyDataStorage:v1.0'
+	}
   
 ## How to use
 1) Initialize the StorageUtility Class like this- 
