@@ -1,20 +1,22 @@
+//apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'com.github.dcendents.android-maven'
 
-publish {
-
-    def groupProjectID = 'com.neeloy.lib.data.storage'
-    def artifactProjectID = 'EasyDataStorage'
-    def publishVersionID = '0.1.0'
-
-    userOrg = 'neeloyghosh1990'
-    repoName = 'EasyDataSorage'
-    groupId = groupProjectID
-    artifactId = artifactProjectID
-    publishVersion = publishVersionID
-    desc = 'Easy data storage is a library where users can stored their data in Shared Preferences in easier way. It provides to store the data in all primitive data type format as well as object and list of custom object format.'
-    website = 'https://github.com/neeloyghosh1990/EasyDataStorage'
-}
+group='com.github.nelloyghosh1990'
+//publish {
+//
+//    def groupProjectID = 'com.neeloy.lib.data.storage'
+//    def artifactProjectID = 'EasyDataStorage'
+//    def publishVersionID = '0.1.0'
+//
+//    userOrg = 'neeloyghosh1990'
+//    repoName = 'EasyDataSorage'
+//    groupId = groupProjectID
+//    artifactId = artifactProjectID
+//    publishVersion = publishVersionID
+//    desc = 'Easy data storage is a library where users can stored their data in Shared Preferences in easier way. It provides to store the data in all primitive data type format as well as object and list of custom object format.'
+//    website = 'https://github.com/neeloyghosh1990/EasyDataStorage'
+//}
 
 android {
     compileSdkVersion 28
@@ -28,33 +30,10 @@ android {
 
 }
 
-//repositories {
-//    flatDir {
-//        dirs 'libs'
-//    }
-//}
-buildscript {
 
-    repositories {
-        google()
-        jcenter()
-    }
-    dependencies {
-        // Step I: add this line
-        classpath 'com.novoda:bintray-release:0.8.0'
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-    }
-}
-
-allprojects {
-    repositories {
-        google()
-        jcenter()
-    }
-}
 
 
 dependencies {
     compile 'com.google.code.gson:gson:2.6.2'
+    implementation "android.arch.work:work-runtime:1.0.0-alpha01"
 }
