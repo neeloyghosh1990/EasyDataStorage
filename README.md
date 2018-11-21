@@ -22,9 +22,9 @@ dependencies {
 ```
 ## How to use
 1) Initialize the StorageUtility Class like this- 
- 
+ ```java
  StorageUtility.initLibrary(this);
-
+``` 
 2) Then to store and retrieve  Data use the functions like this-
 
 **For String:**
