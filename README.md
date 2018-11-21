@@ -27,40 +27,50 @@ dependencies {
 
 2) Then to store and retrieve  Data use the functions like this-
 
-For String:
+**For String:**
+```java
    StorageUtility.setStringData(<key for storing the value>,<Value>);
    StorageUtility.getStringData(<key for storing the value>);
+```
   
-For Integer:
+**For Integer:**
+```java
    StorageUtility.setIntData(<key for storing the value>,<Value>);
    StorageUtility.getIntData(<key for storing the value>);
-  
-For Boolean:
+ ``` 
+**For Boolean:**
+```java
    StorageUtility.setBooleanData(<key for storing the value>,<Value>);
    StorageUtility.getBooleanData(<key for storing the value>);
-
- For Double:
+```
+**For Double:**
+```java
    StorageUtility.setDoubleData(<key for storing the value>,<Value>);
    StorageUtility.getDoubleData(<key for storing the value>);
-  
-
- For Long:
+  ```
+ **For Long:**
+ ```java
    StorageUtility.setLongData(<key for storing the value>,<Value>);
    StorageUtility.getLongData(<key for storing the value>);
-  
- For Object:
+  ```
+ **For Object:**
+ ```java
    StorageUtility.setObject(<key for storing the value>,<Object>);
    StorageUtility.getObject(<key for storing the value>,<.class type of the object>);
-  
-   Eg:
+ ``` 
+   **Eg:**
+   ```java
    StorageUtility.setObject("obj",PassengerDetails.class);
    StorageUtility.getObject("obj",PassengerDetails.class);
- 
-  For List:
+ ```
+  **For List:**
+  ```java
    StorageUtility.setListObject(<key for storing the value>,<ArrayList<Object>>);
    StorageUtility.getListObject(<key for storing the value>,<.class type of the object>);
-  
-   Eg:
+  ```
+   **Eg:**
+   ```java
    ArrayList<Object>list=new ArrayList<Object>();
    StorageUtility.setListObject("obj",list);
    StorageUtility.getListObject("obj",PassengerDetails.class);
+   ```
