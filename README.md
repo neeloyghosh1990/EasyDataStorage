@@ -14,11 +14,12 @@ allprojects {
 }
 ```
   
-Add the dependency
-`dependencies {
+And then in the other gradle file(may be your app gradle or your own module library gradle, but never add in both of them to avoid conflict.)
+```java
+dependencies {
 	        implementation 'com.github.neeloyghosh1990:EasyDataStorage:v1.0'
 	}
-  
+```
 ## How to use
 1) Initialize the StorageUtility Class like this- 
  
