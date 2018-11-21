@@ -74,3 +74,7 @@ dependencies {
    StorageUtility.setListObject("obj",list);
    StorageUtility.getListObject("obj",PassengerDetails.class);
    ```
+3) Then to clear all the data-   
+```java
+   StorageUtility.clearAllData();
+``` 
