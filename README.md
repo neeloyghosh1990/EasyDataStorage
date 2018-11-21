@@ -78,3 +78,11 @@ dependencies {
 ```java
    StorageUtility.clearAllData();
 ``` 
+##### Any Queries? or Feedback, please let me know by opening a [new issue](https://github.com/neeloyghosh1990/EasyDataStorage/issues/new)!
+
+## Contact
+#### Neeloy Ghosh
+
+* :email: e-mail: neeloy.ghosh@gmail.com
+
+
