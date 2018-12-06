@@ -74,11 +74,12 @@ dependencies {
    StorageUtility.setListObject("obj",list);
    StorageUtility.getListObject("obj",PassengerDetails.class);
    ```
- **For Image:**
-     ```java
-      StorageUtility.saveImage(<String theFolder>,<String theImageName>,<Bitmap theBitmap>);
-      StorageUtility.getSavedImage(<String savedImagePath>);
-     ```
+   **For Image:**
+   ```java
+   StorageUtility.saveImage(<String theFolder>,<String theImageName>,<Bitmap theBitmap>);
+   StorageUtility.getSavedImage(<String savedImagePath>);
+   ```
+ 
 3) Then to clear all the data-   
 ```java
    StorageUtility.clearAllData();
