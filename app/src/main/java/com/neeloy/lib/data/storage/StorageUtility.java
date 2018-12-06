@@ -1,6 +1,7 @@
 package com.neeloy.lib.data.storage;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 
 import com.neeloy.lib.data.storage.utils.Prefs;
 import com.neeloy.lib.data.storage.utils.TinyDB;
@@ -135,6 +136,24 @@ public class StorageUtility {
      */
     public static ArrayList<Object> getListObject(String key, Class<?> mClass) {
         return tinydb.getListObject(key, mClass);
+    }
+
+    /**
+     * @param String theFolder
+     * @param String theImageName
+     * @param String theImageName
+     * @return String savedImagePath
+     */
+    public static String saveImage(String theFolder, String theImageName, Bitmap theBitmap) {
+        return tinydb.putImage(theFolder, theImageName, theBitmap);
+    }
+
+    /**
+     * @param String imagePath
+     * @return Bitmap
+     */
+    public static Bitmap getSavedImage(String imagePath) {
+        return tinydb.getImage(imagePath);
     }
 
     /**
