@@ -74,7 +74,7 @@ dependencies {
    StorageUtility.setListObject("obj",list);
    StorageUtility.getListObject("obj",PassengerDetails.class);
    ```
-   **For Image:**
+ **For Image:**
      ```java
       StorageUtility.saveImage(<String theFolder>,<String theImageName>,<Bitmap theBitmap>);
       StorageUtility.getSavedImage(<String savedImagePath>);
